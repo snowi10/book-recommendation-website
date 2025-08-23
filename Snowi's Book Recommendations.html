@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <!--head-->
+    <head>
+        <title>Snowi's Book Recommmendations</title>
+        <!--css style-->
+        <style>
+            body {
+                background-color: rgb(114, 146, 218);
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .text {
+                font-size: 50px;
+                color: rgb(5, 5, 97);
+            }
+            h1 {
+                text-decoration: underline rgb(5, 5, 97);
+            }
+            label {
+                text-shadow: 5px 5px 20px rebeccapurple;
+                text-decoration:rebeccapurple;
+            }
+            #question {
+                display: inline-block;
+                animation-name: float;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes float {
+                0% {transform: translateY(0px)}
+                25% {transform: translateY(30px)}
+                50% {transform: translateY(0px)}
+                75% {transform: translateY(-30px)}
+                100% {transform: translateY(0px)}
+            }
+            #limit, #moods, #submit{
+                font-size: 45px;
+            }
+            #submit, #moods{
+                background-color:  rgb(218, 167, 231);
+                
+            }
+            .socials{
+                font-size: 30px;
+                color: rgb(5, 5, 97);
+                text-decoration: none;
+            }
+            a.socials:hover {
+                color: rgb(218, 167, 231);
+            }
+            a.socials:active, .socials:visited {
+                color: rebeccapurple;
+            }
+        </style>
+    </head>
+    <!--body-->
+    <body>
+        <!--Title-->
+        <header><h1 class="text">Snowi's Book Recommendations</h1></header>
+        <!--link to socials-->
+        <aside>
+            <h3 class="socials"><a href="https://github.com/snowi10" class="socials">GitHub</a> | <a href="https://www.linkedin.com/in/snowi-samountry-4a0992267/" class="socials">LinkedIn</a></h3>
+        </aside>
+        <form>
+            <!--ask user for what moods they are looking for-->
+            <label for="moods" id="question" class="text"><h2>What moods are you looking for?</h2></label>
+            <p class="text" id="limit">Limit input to five words for best results</p>
+            <!--textbox to enter moods-->
+            <input type="text" id="moods" name="moods" class="text">
+            <!--submit moods-->
+            <input id="submit" type="submit" class="text">
+        </form>
+        <!--<img src="c:\Users\snows\VSCode\Book Images\Babel by R.F. Kuang.jpg" alt="Babel by R.F. Kuang">
+        <img src="c:\Users\snows\VSCode\Book Images\Young Mungo by Douglas Stuart.jpg" alt="Young Mungo by Douglas Stuart">
+        <img src="c:\Users\snows\VSCode\Book Images\Our Wives Under the Sea by Julia Armfield.jpg" alt="Our Wives Under the Sea by Juliam Armfield">
+        -->
+    </body>
+</html>
+
